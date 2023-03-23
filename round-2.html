@@ -14,20 +14,20 @@
   <div id="gameGrid">
     <aside>
       <div id="p1Name">Player 1 Score</div>
-    <div>$00,000</div>
+    <div id="p1Score">$00,000</div>
     <hr>
     <div id="p2Name">Player 2 Score</div>
-      <div>$00,000</div>
+      <div id="p2Score">$00,000</div>
     </aside>
     <div>
-      <div class="answerBoard">
+      <div id="answerBoard" class="answerBoard">
         <div class="category">Category 1</div>
         <div class="category">Category 2</div>
         <div class="category">Category 3</div>
         <div class="category">Category 4</div>
         <div class="category">Category 5</div>
         <div class="category">Category 6</div>
-        <div class="answer">400</div>
+        <!-- <div class="answer">400</div>
         <div class="answer">400</div>
         <div class="answer">400</div>
         <div class="answer">400</div>
@@ -56,13 +56,13 @@
         <div class="answer">2000</div>
         <div class="answer">2000</div>
         <div class="answer">2000</div>
-        <div class="answer">2000</div>
+        <div class="answer">2000</div> -->
       </div>
     </div>
   </div>
 
 <!-- Player Number -->
-  <div class="playerTurn">Player #: </div>
+  <div id="playerTurn" class="playerTurn">Player #: </div>
 
 <!-- Pass, Enter Question, Guess -->
   <button id="passBtn">Pass</button>
@@ -76,8 +76,8 @@
     <a class="nextRound" href="./final-jeopardy.html"><button>Final</button></a> <!-- Change this later to respond to a either timer or the answerboard running out -->
   </div>
     <!-- Do not change the script source. Allows import/export to work. -->
-    <audio id="sound1" src="./assets/Jeopardy Board SMS.mp3" autoplay="autoplay"></audio>
-    <script>
+    <!-- <audio id="sound1" src="./assets/Jeopardy Board SMS.mp3" autoplay="autoplay"></audio> -->
+    <!-- <script>
       let playerOneScoreName = document.getElementById("p1Name");
       let playerTwoScoreName = document.getElementById("p2Name");
       
@@ -101,7 +101,17 @@
 } else {
     playerTwoScoreName.innerText = "Player 2's Score"
 };
-      </script>
-    <script src="./scripts/index.js" type="module"></script>
+      </script> -->
+    <!-- <script src="./scripts/index.js" type="module"></script> -->
+    <script src="./scripts/main.js"></script>
+    <!-- <script src="scripts/r2.js" type = "module"></script> -->
+    <!-- <script>    
+      let boxes = document.querySelectorAll(".answer");
+        Array.from(boxes, function(box) {
+            box.addEventListener("click", function() {
+                box.textContent = "here"
+            });
+        });
+        </script> -->
   </body>
 </html>
